@@ -8,13 +8,13 @@ VPN: To access the University network from an external network, establish a secu
 
 # -Instructions for Compilation and Execution
 
-1) Download Files: Obtain the instructions.pbs and parallel_matrix_transposition.c files. These will be used for job submission and program execution. 
-2)Access the HPC Cluster:
+1) Download Files: Obtain the instructions.pbs and parallel_matrix_transposition.c files. These will be used for job submission and program execution.
+2) Access the HPC Cluster:
   -Use a VPN to establish a secure connection to the Trento University network.
   -Open your SSH client and connect to the cluster with the following command:
      ssh username@hpc.unitn.it
 Enter your university credentials when prompted.
-3)Upload Files: Navigate to your desired directory on the cluster, or create a new one.
+3) Upload Files: Navigate to your desired directory on the cluster, or create a new one.
 Upload instructions.pbs and parallel_matrix_transposition.c to the chosen directory using the file transfer feature of your SSH client (e.g., drag-and-drop in MobaXterm or scp for Linux/macOS).
 4) Reserve a Node and Enter an Interactive Session:
   -Move to the directory containing your files:
