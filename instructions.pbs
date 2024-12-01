@@ -1,0 +1,41 @@
+#!/bin/bash
+# Job name
+#PBS -N instructions
+# Output files
+#PBS -o parallel_matrix_transposition.o
+#PBS -e parallel_matrix_transposition.e
+# Queue name
+#PBS -q short_cpuQ
+# Set the maximum wall time
+#PBS -l walltime=0:10:00
+# Resource specifications
+#PBS -l select=1:ncpus=64:ompthreads=64:mem=1mb 
+
+# Load the necessary module
+module load gcc91
+
+# Verify GCC version
+gcc() {
+    gcc-9.1.0 "$@"
+}
+
+gcc --version
+
+# Set your the working directory
+cd /home/ismaele.landini/EXERCIES/project
+
+# Compile the code with OpenMP support
+gcc -o parallel_matrix_transposition parallel_matrix_transposition.c -fopenmp 
+
+# Define the output file for storing concatenated results
+OUTPUT_FILE="results.txt"
+
+# Clear the output file if it exists
+> $OUTPUT_FILE
+
+# Run the program and append output on file "results.txt"
+./parallel_matrix_transposition 128 >> $OUTPUT_FILE  
+
+#input value (now is setted on 128) can be changed to test other matrix size
+
+
