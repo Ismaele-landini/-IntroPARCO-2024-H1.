@@ -10,7 +10,7 @@ VPN: To access the University network from an external network, establish a secu
 
 1) Download Files: Obtain the instructions.pbs and parallel_matrix_transposition.c files. These will be used for job submission and program execution.
 2) Access the HPC Cluster:
-   a) Use a VPN to establish a secure connection to the Trento University network.
+   a) Use a VPN to establish a secure connection to the Trento University network
    b) Open your SSH client and connect to the cluster with the following command:
      ssh username@hpc.unitn.it
 Enter your university credentials when prompted.
