@@ -27,3 +27,6 @@ Upload instructions.pbs and parallel_matrix_transposition.c to the chosen direct
 6) Submit the job to the queue for compile and execution:
    [username@hpc-head-n1 ~]$ qsub instructions.pbs
 7) View the Results: once the program completes, its output will be saved in a file named results.txt in the same directory.
+
+# -View the paper
+Download the Exploring_Implicit_and_Explicit_Parallelism_with_OpenMP.pdf
